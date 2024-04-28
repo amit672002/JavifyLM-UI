@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    border-bottom: 1px solid gray;
+    font-weight: 600;
+    color: var(--secondary-color);
+    padding: 10px 80px 10px 80px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.nav-right a:hover {
+    text-decoration: none;
+    color: hsl(210, 18%, 33%);
+}
+
+.nav-left {
+    display: flex;
+    gap: 7px;
+}
+
+.prompt-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prompt-wrapper input {
+    width: 60%;
+    height: 51px;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    border: none;
+    background-color: #1E1F20;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    color: #fff;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.prompt-wrapper input::placeholder {
+    font-family: Michroma;
+}
+
+.prompt-wrapper button {
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    height: 53px;
+    width: 4%;
+    cursor: pointer;
+    background-color: #1E1F20;
+    border: none;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.prompt-wrapper button:hover {
+    background-color: #3c3f41;
+}
+
+.response-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.response-container {
+    margin-top: 20px;
+    position: relative;
+    font-family: "Michroma";
+}
+
+.news-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px 20px 20px 20px;
+    padding: 0 60px 0 60px;
+}
+
+.card {
+    width: 270px;
+    height: 200px;
+    text-wrap: wrap;
+    text-decoration: none;
+    border: none;
+    background-color: #333537;
+    border-radius: 17px;
+    padding: 15px;
+    padding-bottom: 20px;
+    line-height: 23px;
+    margin: 17px;
+    font-size: 0.9rem;
+    font-weight: 100;
+    overflow: auto;
+}
+
+.card::-webkit-scrollbar {
+    display: none;
+}
+
+.card:hover {
+    background-color: #45484a;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 7px;
+}
+
+.welcome-container {
+    padding: 0 110px 0 110px;
+}
+
+.welcome-container span {
+    font-size: 5rem;
+    background: linear-gradient(to right, #f32170, 
+    #ff6b08, #cf23cf, #eedd44); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+}
+
+.welcome-container p {
+    font-size: 3rem;
+    color: #333537;
+    margin: 20px 0  20px 0;
+}
+
+.loading-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 75vh;
+    font-family: Michroma;
+    position: relative;
+}
+
+.loading-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 17px;
+}
+
+#svg {
+    height: 150px;
+    width: 150px;
+    stroke: #fff;
+    fill-opacity: 0;
+    stroke-width: 3px;
+    stroke-dasharray: 4500;
+    animation: draw 3s ease-in infinite;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dashoffset: 4500;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.logo-name {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}

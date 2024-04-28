@@ -16,8 +16,8 @@ const MainComponent = () => {
   };
 
   const getResponse = async () => {
+    setApiResponse("");
     setIsLoading(true);
-
     try {
       const response = await axios.post(
         "http://localhost:1234/v1/chat/completions",

@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="nav-bar">
       <div className="nav-left">
-        <p>Logo</p>
+        <p></p>
         <p>JavifyLM</p>
       </div>
       <div className="nav-right">

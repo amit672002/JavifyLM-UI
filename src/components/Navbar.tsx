@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 import "./Components.css";
+import Image from "../assets/logo.png";
 
 const Navbar = () => {
   return (
     <nav className="nav-bar">
       <div className="nav-left">
-        <p></p>
+        <img
+          src={Image}
+          style={{ width: "45px", height: "40px", marginTop: "10px" }}
+        />
         <p>JavifyLM</p>
       </div>
       <div className="nav-right">
